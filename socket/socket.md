@@ -50,6 +50,7 @@
 
    * 签名代码示例(Java)
 
+##### java demo 
      ```java
      String timestamp = "1566322200000";
      String secretKey = "XXXXXXXXXXXXXXXXXXXXXXX";
@@ -61,7 +62,13 @@
      String sign = Hex.encodeHexString(hash);
      ```
 
-     
+##### php demo 
+```php demo 
+            $timestamp = '1566322200000';
+            $secretKey = 'XXXXXXXXXXXXXXXXXXXXXXX';
+            $str = 'apiKey=4565B83XXXXXXXXXXXXF123&timestamp=1566322200000';
+            $sign = hash_hmac("sha512", $str, $secretKey,false);
+ ```  
 
 1. 接口列表
 
