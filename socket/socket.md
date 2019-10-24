@@ -51,7 +51,7 @@
    * 签名代码示例(Java)
 
 ##### java demo 
-     ```java
+```java demo 
      String timestamp = "1566322200000";
      String secretKey = "XXXXXXXXXXXXXXXXXXXXXXX";
      Mac hmacSha512 = Mac.getInstance("HmacSHA512");
@@ -60,7 +60,7 @@
      String paramStr = "apiKey=4565B83XXXXXXXXXXXXF123&timestamp=1566322200000";
      byte[] hash = hmacSha512.doFinal(paramStr.getBytes(StandardCharsets.UTF_8));
      String sign = Hex.encodeHexString(hash);
-     ```
+ ```  
 
 ##### php demo 
 ```php demo 
