@@ -48,6 +48,7 @@ API Key 包括以下两部分
 
 将生成的签名内容和secretKey使用HmacSHA512算法生成签名
 
+##### java demo 
 ```java demo 
             String timestamp = "1566322200000";
             String secretKey = "XXXXXXXXXXXXXXXXXXXXXXX";
@@ -60,6 +61,8 @@ API Key 包括以下两部分
 
 ```
 
+
+##### php demo 
 ```php demo 
             $timestamp = '1566322200000';
             $privateKey = 'XXXXXXXXXXXXXXXXXXXXXXX';
