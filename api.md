@@ -48,7 +48,7 @@ API Key 包括以下两部分
 
 将生成的签名内容和secretKey使用HmacSHA512算法生成签名
 
-```java
+```java demo 
             String timestamp = "1566322200000";
             String secretKey = "XXXXXXXXXXXXXXXXXXXXXXX";
             Mac hmacSha512 = Mac.getInstance("HmacSHA512");
@@ -60,6 +60,13 @@ API Key 包括以下两部分
 
 ```
 
+```php demo 
+            $timestamp = '1566322200000';
+            $privateKey = 'XXXXXXXXXXXXXXXXXXXXXXX';
+            $str = 'timestamp=1566322200000&orderId=E12345XXXXXXXX&apiKey=4565B83XXXXXXXXXXXXF123';
+            $sign = hash_hmac("sha512", $str, $privateKey,false);
+
+```
 ## 请求格式
 
 所有的API请求都以GET或者POST形式发出。对于GET请求，所有的参数都在路径参数里；对于POST请求，所有参数则以JSON格式发送在请求主体（body）里，头部信息（header）中
