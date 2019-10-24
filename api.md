@@ -65,9 +65,9 @@ API Key 包括以下两部分
 ##### php demo 
 ```php demo 
             $timestamp = '1566322200000';
-            $privateKey = 'XXXXXXXXXXXXXXXXXXXXXXX';
+            $secretKey = 'XXXXXXXXXXXXXXXXXXXXXXX';
             $str = 'timestamp=1566322200000&orderId=E12345XXXXXXXX&apiKey=4565B83XXXXXXXXXXXXF123';
-            $sign = hash_hmac("sha512", $str, $privateKey,false);
+            $sign = hash_hmac("sha512", $str, $secretKey,false);
 
 ```
 ## 请求格式
